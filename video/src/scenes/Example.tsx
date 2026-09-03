@@ -110,17 +110,31 @@ export const Example: React.FC<{copy: Copy; example: Ex; index: number; total: n
           </div>
         </div>
 
+        {/* Вывод набран той же идиомой, что шапка сцены: точка и приглушённый
+            текст. Толстая цветная полоса слева читалась бы как врезка из
+            любого сгенерированного интерфейса, а ролик как раз про это. */}
         <div
           style={{
             marginTop: 46,
             minHeight: 68,
-            paddingLeft: 20,
-            borderLeft: `3px solid ${C.cool}`,
+            display: 'flex',
+            alignItems: 'baseline',
+            gap: 16,
             fontSize: 24,
             color: C.ink2,
             opacity: inNote,
           }}
         >
+          <span
+            style={{
+              width: 6,
+              height: 6,
+              borderRadius: 3,
+              background: C.cool,
+              flexShrink: 0,
+              transform: 'translateY(-4px)',
+            }}
+          />
           {example.note}
         </div>
       </AbsoluteFill>
