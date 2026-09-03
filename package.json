@@ -1,0 +1,36 @@
+{
+  "name": "plain-prose",
+  "version": "1.0.0",
+  "description": "Agent skill that removes AI writing patterns from English, Russian and German prose, with a zero-dependency checker.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dripips/plain-prose.git"
+  },
+  "bin": {
+    "plain-prose": "check.js"
+  },
+  "main": "check.js",
+  "files": [
+    "check.js",
+    "SKILL.md",
+    "references"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "self": "node check.js --skip-quotes --context docs SKILL.md references/phrases.md references/structures.md references/rewriting.md references/contexts.md references/russian.md references/german.md references/examples.md"
+  },
+  "keywords": [
+    "writing",
+    "editing",
+    "ai-detection",
+    "prose",
+    "claude-code",
+    "agent-skill",
+    "russian",
+    "german"
+  ]
+}
