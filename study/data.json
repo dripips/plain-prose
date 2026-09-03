@@ -1,0 +1,416 @@
+{
+ "corpus": "articles",
+ "rows": [
+  {
+   "article": "claude-fable-5-deep-dive",
+   "lang": "de",
+   "words": 755,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  },
+  {
+   "article": "claude-fable-5-deep-dive",
+   "lang": "en",
+   "words": 1190,
+   "native_findings": {
+    "opener": 1
+   },
+   "english_ruleset_findings": {
+    "opener": 1
+   },
+   "score": 49
+  },
+  {
+   "article": "claude-fable-5-deep-dive",
+   "lang": "ru",
+   "words": 1119,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  },
+  {
+   "article": "clickhouse-web-analytics",
+   "lang": "de",
+   "words": 798,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 49
+  },
+  {
+   "article": "clickhouse-web-analytics",
+   "lang": "en",
+   "words": 1142,
+   "native_findings": {},
+   "english_ruleset_findings": {},
+   "score": 47
+  },
+  {
+   "article": "clickhouse-web-analytics",
+   "lang": "ru",
+   "words": 1045,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 48
+  },
+  {
+   "article": "docker-multistage-builds",
+   "lang": "de",
+   "words": 298,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 48
+  },
+  {
+   "article": "docker-multistage-builds",
+   "lang": "en",
+   "words": 479,
+   "native_findings": {},
+   "english_ruleset_findings": {},
+   "score": 50
+  },
+  {
+   "article": "docker-multistage-builds",
+   "lang": "ru",
+   "words": 607,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  },
+  {
+   "article": "fastapi-vs-go-fiber-vs-fastify",
+   "lang": "de",
+   "words": 356,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  },
+  {
+   "article": "fastapi-vs-go-fiber-vs-fastify",
+   "lang": "en",
+   "words": 480,
+   "native_findings": {},
+   "english_ruleset_findings": {},
+   "score": 50
+  },
+  {
+   "article": "fastapi-vs-go-fiber-vs-fastify",
+   "lang": "ru",
+   "words": 695,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 49
+  },
+  {
+   "article": "glm-5-2-chinese-ai-monster",
+   "lang": "de",
+   "words": 604,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 49
+  },
+  {
+   "article": "glm-5-2-chinese-ai-monster",
+   "lang": "en",
+   "words": 1018,
+   "native_findings": {},
+   "english_ruleset_findings": {},
+   "score": 50
+  },
+  {
+   "article": "glm-5-2-chinese-ai-monster",
+   "lang": "ru",
+   "words": 965,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  },
+  {
+   "article": "laravel-queues-vs-symfony-messenger",
+   "lang": "de",
+   "words": 479,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  },
+  {
+   "article": "laravel-queues-vs-symfony-messenger",
+   "lang": "en",
+   "words": 713,
+   "native_findings": {},
+   "english_ruleset_findings": {},
+   "score": 48
+  },
+  {
+   "article": "laravel-queues-vs-symfony-messenger",
+   "lang": "ru",
+   "words": 816,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  },
+  {
+   "article": "pagespeed-100",
+   "lang": "de",
+   "words": 327,
+   "native_findings": {
+    "bold": 1
+   },
+   "english_ruleset_findings": {
+    "em-dash": 1,
+    "bold": 1
+   },
+   "score": 43
+  },
+  {
+   "article": "pagespeed-100",
+   "lang": "en",
+   "words": 356,
+   "native_findings": {
+    "bold": 1
+   },
+   "english_ruleset_findings": {
+    "bold": 1
+   },
+   "score": 44
+  },
+  {
+   "article": "pagespeed-100",
+   "lang": "ru",
+   "words": 385,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 45
+  },
+  {
+   "article": "php84-features",
+   "lang": "de",
+   "words": 824,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 48
+  },
+  {
+   "article": "php84-features",
+   "lang": "en",
+   "words": 913,
+   "native_findings": {
+    "em-dash": 1
+   },
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 49
+  },
+  {
+   "article": "php84-features",
+   "lang": "ru",
+   "words": 830,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  },
+  {
+   "article": "postgresql-partitioning",
+   "lang": "de",
+   "words": 424,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  },
+  {
+   "article": "postgresql-partitioning",
+   "lang": "en",
+   "words": 593,
+   "native_findings": {},
+   "english_ruleset_findings": {},
+   "score": 50
+  },
+  {
+   "article": "postgresql-partitioning",
+   "lang": "ru",
+   "words": 765,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  },
+  {
+   "article": "redis-streams",
+   "lang": "de",
+   "words": 342,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 48
+  },
+  {
+   "article": "redis-streams",
+   "lang": "en",
+   "words": 472,
+   "native_findings": {},
+   "english_ruleset_findings": {},
+   "score": 48
+  },
+  {
+   "article": "redis-streams",
+   "lang": "ru",
+   "words": 522,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 49
+  },
+  {
+   "article": "search-engines-comparison",
+   "lang": "de",
+   "words": 539,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 48
+  },
+  {
+   "article": "search-engines-comparison",
+   "lang": "en",
+   "words": 785,
+   "native_findings": {},
+   "english_ruleset_findings": {},
+   "score": 49
+  },
+  {
+   "article": "search-engines-comparison",
+   "lang": "ru",
+   "words": 1078,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 47
+  },
+  {
+   "article": "vibe-coding-hype-vs-reality",
+   "lang": "de",
+   "words": 906,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 49
+  },
+  {
+   "article": "vibe-coding-hype-vs-reality",
+   "lang": "en",
+   "words": 930,
+   "native_findings": {
+    "contrast": 1
+   },
+   "english_ruleset_findings": {
+    "contrast": 1
+   },
+   "score": 45
+  },
+  {
+   "article": "vibe-coding-hype-vs-reality",
+   "lang": "ru",
+   "words": 798,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 48
+  },
+  {
+   "article": "weekly-digest-2026-05-30",
+   "lang": "de",
+   "words": 670,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 49
+  },
+  {
+   "article": "weekly-digest-2026-05-30",
+   "lang": "en",
+   "words": 1038,
+   "native_findings": {},
+   "english_ruleset_findings": {},
+   "score": 49
+  },
+  {
+   "article": "weekly-digest-2026-05-30",
+   "lang": "ru",
+   "words": 1377,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 49
+  },
+  {
+   "article": "weekly-digest-2026-05-31",
+   "lang": "de",
+   "words": 672,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  },
+  {
+   "article": "weekly-digest-2026-05-31",
+   "lang": "en",
+   "words": 1047,
+   "native_findings": {},
+   "english_ruleset_findings": {},
+   "score": 50
+  },
+  {
+   "article": "weekly-digest-2026-05-31",
+   "lang": "ru",
+   "words": 1230,
+   "native_findings": {},
+   "english_ruleset_findings": {
+    "em-dash": 1
+   },
+   "score": 50
+  }
+ ]
+}

@@ -1,0 +1,218 @@
+{
+ "de": [
+  {
+   "article": "claude-fable-5-deep-dive",
+   "words": 674,
+   "dashes": 15
+  },
+  {
+   "article": "clickhouse-web-analytics",
+   "words": 828,
+   "dashes": 26
+  },
+  {
+   "article": "docker-multistage-builds",
+   "words": 320,
+   "dashes": 4
+  },
+  {
+   "article": "fastapi-vs-go-fiber-vs-fastify",
+   "words": 355,
+   "dashes": 4
+  },
+  {
+   "article": "glm-5-2-chinese-ai-monster",
+   "words": 516,
+   "dashes": 21
+  },
+  {
+   "article": "laravel-queues-vs-symfony-messenger",
+   "words": 480,
+   "dashes": 10
+  },
+  {
+   "article": "pagespeed-100",
+   "words": 306,
+   "dashes": 8
+  },
+  {
+   "article": "php84-features",
+   "words": 852,
+   "dashes": 29
+  },
+  {
+   "article": "postgresql-partitioning",
+   "words": 407,
+   "dashes": 9
+  },
+  {
+   "article": "redis-streams",
+   "words": 345,
+   "dashes": 3
+  },
+  {
+   "article": "search-engines-comparison",
+   "words": 533,
+   "dashes": 17
+  },
+  {
+   "article": "vibe-coding-hype-vs-reality",
+   "words": 876,
+   "dashes": 26
+  },
+  {
+   "article": "weekly-digest-2026-05-30",
+   "words": 657,
+   "dashes": 7
+  },
+  {
+   "article": "weekly-digest-2026-05-31",
+   "words": 661,
+   "dashes": 16
+  }
+ ],
+ "en": [
+  {
+   "article": "claude-fable-5-deep-dive",
+   "words": 1089,
+   "dashes": 8
+  },
+  {
+   "article": "clickhouse-web-analytics",
+   "words": 1180,
+   "dashes": 9
+  },
+  {
+   "article": "docker-multistage-builds",
+   "words": 517,
+   "dashes": 2
+  },
+  {
+   "article": "fastapi-vs-go-fiber-vs-fastify",
+   "words": 480,
+   "dashes": 0
+  },
+  {
+   "article": "glm-5-2-chinese-ai-monster",
+   "words": 890,
+   "dashes": 22
+  },
+  {
+   "article": "laravel-queues-vs-symfony-messenger",
+   "words": 722,
+   "dashes": 9
+  },
+  {
+   "article": "pagespeed-100",
+   "words": 335,
+   "dashes": 0
+  },
+  {
+   "article": "php84-features",
+   "words": 938,
+   "dashes": 14
+  },
+  {
+   "article": "postgresql-partitioning",
+   "words": 595,
+   "dashes": 4
+  },
+  {
+   "article": "redis-streams",
+   "words": 476,
+   "dashes": 0
+  },
+  {
+   "article": "search-engines-comparison",
+   "words": 775,
+   "dashes": 6
+  },
+  {
+   "article": "vibe-coding-hype-vs-reality",
+   "words": 900,
+   "dashes": 0
+  },
+  {
+   "article": "weekly-digest-2026-05-30",
+   "words": 1016,
+   "dashes": 3
+  },
+  {
+   "article": "weekly-digest-2026-05-31",
+   "words": 1028,
+   "dashes": 10
+  }
+ ],
+ "ru": [
+  {
+   "article": "claude-fable-5-deep-dive",
+   "words": 1017,
+   "dashes": 28
+  },
+  {
+   "article": "clickhouse-web-analytics",
+   "words": 1073,
+   "dashes": 42
+  },
+  {
+   "article": "docker-multistage-builds",
+   "words": 736,
+   "dashes": 34
+  },
+  {
+   "article": "fastapi-vs-go-fiber-vs-fastify",
+   "words": 692,
+   "dashes": 26
+  },
+  {
+   "article": "glm-5-2-chinese-ai-monster",
+   "words": 833,
+   "dashes": 43
+  },
+  {
+   "article": "laravel-queues-vs-symfony-messenger",
+   "words": 827,
+   "dashes": 28
+  },
+  {
+   "article": "pagespeed-100",
+   "words": 384,
+   "dashes": 18
+  },
+  {
+   "article": "php84-features",
+   "words": 849,
+   "dashes": 38
+  },
+  {
+   "article": "postgresql-partitioning",
+   "words": 767,
+   "dashes": 25
+  },
+  {
+   "article": "redis-streams",
+   "words": 552,
+   "dashes": 17
+  },
+  {
+   "article": "search-engines-comparison",
+   "words": 1059,
+   "dashes": 42
+  },
+  {
+   "article": "vibe-coding-hype-vs-reality",
+   "words": 768,
+   "dashes": 33
+  },
+  {
+   "article": "weekly-digest-2026-05-30",
+   "words": 1359,
+   "dashes": 55
+  },
+  {
+   "article": "weekly-digest-2026-05-31",
+   "words": 1209,
+   "dashes": 52
+  }
+ ]
+}

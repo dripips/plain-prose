@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<rect width="760" height="420" fill="#12121a"/>
+<text x="40" y="34" fill="#e7e7ea" font-size="19" font-weight="700">Что англоязычный набор правил делает с чужим языком</text>
+<text x="40" y="56" fill="#8b8b96" font-size="13">Находки P0 и P1 на тех же 42 файлах: со своим языком против принудительно английского</text>
+<text x="176" y="96" fill="#e7e7ea" font-size="13" text-anchor="end">русский, свой язык</text>
+<rect x="190" y="74" width="2" height="34" rx="5" fill="#3b82f6"/>
+<text x="202" y="96" fill="#e7e7ea" font-size="13" font-weight="600" font-family="ui-monospace, monospace">0 находок</text>
+<text x="176" y="146" fill="#e7e7ea" font-size="13" text-anchor="end">русский, англонабор</text>
+<rect x="190" y="124" width="405" height="34" rx="5" fill="#ef4444"/>
+<text x="605" y="146" fill="#e7e7ea" font-size="13" font-weight="600" font-family="ui-monospace, monospace">14 находок</text>
+<text x="176" y="196" fill="#e7e7ea" font-size="13" text-anchor="end">немецкий, свой язык</text>
+<rect x="190" y="174" width="28" height="34" rx="5" fill="#3b82f6"/>
+<text x="228" y="196" fill="#e7e7ea" font-size="13" font-weight="600" font-family="ui-monospace, monospace">1 находок</text>
+<text x="176" y="246" fill="#e7e7ea" font-size="13" text-anchor="end">немецкий, англонабор</text>
+<rect x="190" y="224" width="434" height="34" rx="5" fill="#ef4444"/>
+<text x="634" y="246" fill="#e7e7ea" font-size="13" font-weight="600" font-family="ui-monospace, monospace">15 находок</text>
+<text x="176" y="296" fill="#e7e7ea" font-size="13" text-anchor="end">английский, свой язык</text>
+<rect x="190" y="274" width="115" height="34" rx="5" fill="#3b82f6"/>
+<text x="315" y="296" fill="#e7e7ea" font-size="13" font-weight="600" font-family="ui-monospace, monospace">4 находок</text>
+<text x="176" y="346" fill="#e7e7ea" font-size="13" text-anchor="end">английский, англонабор</text>
+<rect x="190" y="324" width="115" height="34" rx="5" fill="#3b82f6"/>
+<text x="315" y="346" fill="#e7e7ea" font-size="13" font-weight="600" font-family="ui-monospace, monospace">4 находок</text>
+</svg>

@@ -120,6 +120,14 @@ check.js                    the checker
 check.test.js               31 tests, node --test
 ```
 
+## Study
+
+[study/](study/) holds a measurement, not an opinion: what an English-only rule set does to correct Russian and German prose. The material is 14 articles that exist in three human translations, so the comparison is one text across three languages rather than three different texts.
+
+The English rule set flags 28 of 28 Russian and German articles. Real findings in them: zero. Every false positive is the em dash rate rule, and the reason is in the numbers: Russian prose runs at 39.7 dashes per 1000 words against an English threshold of 1, because the dash between subject and predicate is mandatory in Russian.
+
+A second finding fell out of the same data. The English translations carried 24.0 dashes per 1000 words before the cleanup, close to the German rate and far above the English norm. A human translated them and the wording was fine; the punctuation habit came across. See [study/README.md](study/README.md) and read [study/DATA_NOTE.md](study/DATA_NOTE.md) before citing any of it.
+
 ## Development
 
 ```bash

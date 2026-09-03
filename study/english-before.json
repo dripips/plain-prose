@@ -1,0 +1,75 @@
+{
+ "note": "английские статьи на коммите до чистки 5fd059c^",
+ "rows": [
+  {
+   "article": "claude-fable-5-deep-dive",
+   "words": 1097,
+   "dashes": 19
+  },
+  {
+   "article": "clickhouse-web-analytics",
+   "words": 1182,
+   "dashes": 33
+  },
+  {
+   "article": "docker-multistage-builds",
+   "words": 508,
+   "dashes": 8
+  },
+  {
+   "article": "fastapi-vs-go-fiber-vs-fastify",
+   "words": 486,
+   "dashes": 7
+  },
+  {
+   "article": "glm-5-2-chinese-ai-monster",
+   "words": 891,
+   "dashes": 31
+  },
+  {
+   "article": "laravel-queues-vs-symfony-messenger",
+   "words": 723,
+   "dashes": 15
+  },
+  {
+   "article": "pagespeed-100",
+   "words": 332,
+   "dashes": 9
+  },
+  {
+   "article": "php84-features",
+   "words": 929,
+   "dashes": 31
+  },
+  {
+   "article": "postgresql-partitioning",
+   "words": 602,
+   "dashes": 12
+  },
+  {
+   "article": "redis-streams",
+   "words": 472,
+   "dashes": 3
+  },
+  {
+   "article": "search-engines-comparison",
+   "words": 765,
+   "dashes": 20
+  },
+  {
+   "article": "vibe-coding-hype-vs-reality",
+   "words": 900,
+   "dashes": 25
+  },
+  {
+   "article": "weekly-digest-2026-05-30",
+   "words": 0,
+   "dashes": 0
+  },
+  {
+   "article": "weekly-digest-2026-05-31",
+   "words": 0,
+   "dashes": 0
+  }
+ ]
+}
