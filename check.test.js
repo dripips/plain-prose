@@ -221,3 +221,27 @@ test('a marked lead term is a label at any length, an unmarked one must be short
   const twice = '- **Integers everywhere** — kopecks and thousandths — and verify runs nightly';
   assert.ok(rules(run(twice, { lang: 'en' })).includes('em-dash'));
 });
+
+test('prose-ignore drops a line from the audit, prose-ignore-file drops the file', () => {
+  const line = 'We leverage a robust platform. <!-- prose-ignore -->\nWe leverage it again.';
+  const found = messages(run(line));
+  assert.match(found, /"leverage"/);
+  assert.doesNotMatch(found, /×2/);          // вторая строка учтена, первая нет
+
+  const whole = '<!-- prose-ignore-file -->\nHere\'s the thing: we leverage a robust platform.';
+  assert.deepStrictEqual(rules(run(whole)), []);
+});
+
+test('an ignored line is not counted in the word total either', () => {
+  const src = 'word '.repeat(40) + '\nalpha — beta. <!-- prose-ignore -->';
+  assert.ok(!rules(run(src, { lang: 'en' })).includes('em-dash'));
+});
+
+test('writing about the ignore marker does not trigger it', () => {
+  // Первая версия правила гасила README, который её же документировал.
+  const doc = 'A line carrying `prose-ignore` drops out, and `prose-ignore-file` skips the file. '
+    + "Here's the thing: we leverage a robust platform.";
+  const found = rules(run(doc));
+  assert.ok(found.includes('opener'));
+  assert.ok(found.includes('tier1'));
+});

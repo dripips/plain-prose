@@ -1,6 +1,6 @@
 {
   "name": "plain-prose",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Agent skill that removes AI writing patterns from English, Russian and German prose, with a zero-dependency checker.",
   "license": "MIT",
   "repository": {

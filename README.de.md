@@ -90,6 +90,8 @@ entwurf.md  [de/blog, 412 words]
 
 Rückgabewert 0 bei sauberem Text, 1 bei Funden. Damit passt es in einen Pre-Commit-Hook oder in CI.
 
+Eine Zeile mit `prose-ignore` fällt aus der Prüfung, eine Datei mit `prose-ignore-file` wird ganz übersprungen. Gedacht für den Fall, dass die markierte Stelle eine bewusste Entscheidung ist.
+
 Vor der Auswertung werden Frontmatter, Codeblöcke, Inline-Code, Linkziele, nackte URLs und Tabellenzeilen ausgeblendet. Der Skill verspricht, genau diese Bereiche nie umzuschreiben, also wäre es unredlich, dort zu zählen. Zwei Ausnahmen folgen derselben Logik: Ein Strich, der in einem Listenpunkt einen Begriff von seiner Erläuterung trennt, ist Typografie, und eine Dreiergruppe innerhalb einer längeren Aufzählung ist eine Spezifikation und kein Rhythmus.
 
 Die Bewertung über fünf Achsen ist eine Näherung. Sie misst, was ein regulärer Ausdruck messen kann: Füllwortanteil, Streuung der Satz- und Absatzlängen, Anzahl der Abschwächer, Dichte des Vokabulars der ersten Stufe. Die eigentliche Bewertung nimmt das Modell vor, das den Text liest, und dieselben fünf Achsen sind in `SKILL.md` für es beschrieben.
@@ -112,9 +114,10 @@ references/rewriting.md     Erfindungsverbot, Stimmen, Ausgabeformate
 references/contexts.md      Strenge nach Zielgruppe, mit Toleranzmatrix
 references/russian.md       russische Spuren, Lehnwörter, falsche Freunde
 references/german.md        deutsche Spuren, Substantivstil, falsche Freunde
+references/not-tells.md     was als Spur gilt und keine ist
 references/examples.md      vorher und nachher in drei Sprachen
 check.js                    das Prüfwerkzeug
-check.test.js               29 Tests, node --test
+check.test.js               31 Tests, node --test
 ```
 
 ## Entwicklung
@@ -128,6 +131,6 @@ Der Selbsttest läuft mit `--skip-quotes --context docs`, denn ein Katalog verbo
 
 ## Herkunft
 
-Zusammengeführt aus [stop-slop](https://github.com/hardikpandya/stop-slop) von Hardik Pandya und [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) von Conor Bronsdon, beide MIT. Die Vokabularstufen gehen auf [brandonwise/humanizer](https://github.com/brandonwise/humanizer) zurück, das Erfindungsverbot auf [isatimur/de-slop](https://github.com/isatimur/de-slop), beides über die zweite Vorlage.
+Zusammengeführt aus [stop-slop](https://github.com/hardikpandya/stop-slop) von Hardik Pandya und [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) von Conor Bronsdon, beide MIT. Der Gedanke, dass eine Spur kein verbotenes Wort ist, sondern ein Wort, das niemand gewählt hat, sowie die Markierung `prose-ignore` und die Nicht-Spuren-Liste stammen aus [unslop-ui](https://github.com/JCarterJohnson/vibecoded-design-tells) von Carter Johnson (MIT). Die Vokabularstufen gehen auf [brandonwise/humanizer](https://github.com/brandonwise/humanizer) zurück, das Erfindungsverbot auf [isatimur/de-slop](https://github.com/isatimur/de-slop), beides über die zweite Vorlage.
 
 MIT.

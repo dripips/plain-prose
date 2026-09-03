@@ -151,6 +151,17 @@ const TECH_OK = {
 function mask(src, skipQuotes) {
   let out = src;
   const blank = (m) => m.replace(/[^\n]/g, ' ');
+  // A deliberate choice is not a tell. A line carrying the ignore marker drops
+  // out of the audit; a file carrying the file marker is skipped whole. Without
+  // an escape hatch the tool nags about settled decisions and stops being read.
+  //
+  // The marker only counts inside a comment. Writing about the marker in prose
+  // must not trigger it: the first version of this rule blanked the README that
+  // documented it.
+  const FILE_MARK = /<!--\s*prose-ignore-file\s*-->|(?:^|\s)(?:\/\/|#)\s*prose-ignore-file\b/;
+  const LINE_MARK = /<!--\s*prose-ignore(-file)?\s*-->|(?:^|\s)(?:\/\/|#)\s*prose-ignore(-file)?\b/;
+  if (FILE_MARK.test(out)) return blank(out);
+  out = out.split('\n').map((line) => (LINE_MARK.test(line) ? blank(line) : line)).join('\n');
   out = out.replace(/^---\n[\s\S]*?\n---\n/, blank);      // frontmatter
   out = out.replace(/```[\s\S]*?```/g, blank);            // fenced code
   out = out.replace(/~~~[\s\S]*?~~~/g, blank);

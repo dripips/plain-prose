@@ -90,6 +90,8 @@ draft.md  [en/blog, 412 words]
 
 It exits 0 when clean and 1 when it finds something, so it drops into a pre-commit hook or CI.
 
+A line carrying `prose-ignore` is dropped from the audit, and a file carrying `prose-ignore-file` is skipped whole. Use it when a flagged span is a real decision: a tool that keeps re-raising a settled choice teaches you to stop reading it.
+
 Before it reads a word, it blanks out frontmatter, fenced and inline code, link targets, bare URLs and table rows. Those are the regions the skill promises never to rewrite, so counting tells inside them would be dishonest. Two carve-outs follow the same logic: a dash separating a lead term from its gloss in a list item is typography, and a triad inside a longer enumeration is a specification rather than a cadence.
 
 The five-dimension score is a proxy. It measures what a regular expression can measure: filler rate, sentence and paragraph variance, hedge count, tier 1 density. A model reading the text does the real scoring, and the same five dimensions are defined for it in `SKILL.md`.
@@ -112,9 +114,10 @@ references/rewriting.md     never-inject guardrails, voices, output formats
 references/contexts.md      per-audience strictness with a tolerance matrix
 references/russian.md       Russian tells, calques, false friends
 references/german.md        German tells, Substantivstil, false friends
+references/not-tells.md     what gets called a tell and is not
 references/examples.md      before and after in three languages
 check.js                    the checker
-check.test.js               29 tests, node --test
+check.test.js               31 tests, node --test
 ```
 
 ## Development
@@ -128,6 +131,6 @@ The self-scan uses `--skip-quotes --context docs`, because a catalogue of banned
 
 ## Credits
 
-Merged from [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya and [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) by Conor Bronsdon, both MIT. The vocabulary tiers trace further back to [brandonwise/humanizer](https://github.com/brandonwise/humanizer), and the never-inject rule to [isatimur/de-slop](https://github.com/isatimur/de-slop), through the second source.
+Merged from [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya and [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) by Conor Bronsdon, both MIT. The unspecified-default framing, the `prose-ignore` escape hatch and the not-tells list come from [unslop-ui](https://github.com/JCarterJohnson/vibecoded-design-tells) by Carter Johnson (MIT), which applies the same three ideas to visual design. The vocabulary tiers trace further back to [brandonwise/humanizer](https://github.com/brandonwise/humanizer), and the never-inject rule to [isatimur/de-slop](https://github.com/isatimur/de-slop), through the second source.
 
 MIT.

@@ -3,7 +3,7 @@ name: plain-prose
 description: Audit and rewrite text to remove AI writing patterns. Use when drafting, editing or reviewing prose, or when asked to clean up AI-isms, remove AI tells, or make text sound less like AI. Covers English, Russian and German.
 license: MIT
 metadata:
-  version: 1.0.1
+  version: 1.1.0
   author: dripips (https://github.com/dripips)
   repository: https://github.com/dripips/plain-prose
   languages: en, ru, de
@@ -20,6 +20,19 @@ Strip the patterns that make text read as machine-written. English, Russian, Ger
 These patterns run more often in machine text, and humans produce every one of them: under deadline, in an unfamiliar genre, in a second language. Audits of commercial AI detectors report false-positive rates above 60% on non-native English writers (Liang et al., Stanford, *Patterns* 2023) and misclassification above 70% for open-source detectors (Jabarian & Imas, BFI WP 2025-116).
 
 Use the flags to improve writing. Never use them alone to decide something consequential about a person: a grade, a hire, an accusation.
+
+## A tell is an unspecified default
+
+The thing that makes a sentence read as machine-written is not the word. It is that nobody chose the word. An em dash a writer placed on purpose is punctuation; an em dash in every third sentence because the model reaches for it is a tell. The same holds for a triad, a "however", a formal register.
+
+So the question for every flag is not "is this on the list" but "did a person decide this, and can they say why". A default never survives that question. A decision always does.
+
+Two consequences:
+
+- **A fix that installs a new default is not a fix.** Replacing every em dash with a comma, every triad with a pair, every "delve" with "explore" produces text with a different fingerprint, not text with an author. See [references/rewriting.md](references/rewriting.md) on the same failure in voice.
+- **A deliberate choice stays.** When a flagged span is a real decision, mark the line `prose-ignore` and the checker leaves it alone. An audit that nags about settled choices stops being read.
+
+Borrowed from [unslop-ui](https://github.com/JCarterJohnson/vibecoded-design-tells) by Carter Johnson, which makes this point about visual design: a tell is an unspecified default, not a banned colour.
 
 ## Modes
 
@@ -65,6 +78,19 @@ When the text is *about* AI writing, its quoted examples are exempt. Flag only t
 - **P1, obvious machine smell.** Tier 1 vocabulary, template phrases, binary contrasts, "Let's" openers, bold overuse, em dash rate, endorsement closers.
 - **P2, polish.** Generic conclusions, rule of three, uniform paragraph length, copula avoidance, transition words.
 
+## Not tells
+
+Over-flagging teaches the writer to ignore the tool, so the catalogue stays narrow. These get named as AI tells and are not, on their own:
+
+- **The em dash as a character.** The habit is the tell, measured as a rate. One dash is punctuation, and in Russian and German it is mandatory punctuation.
+- **A single tier-1 word.** One "delve" is a word. Four in a page is a signal.
+- **Clean grammar and no typos.** Careful people exist, and so do editors.
+- **Formal register or long words.** This is what second-language and academic writing looks like. Flagging it punishes the writer, not the machine.
+- **Lists.** A list of genuinely list-shaped content is right. Bullets of bare noun phrases replacing prose are the tell.
+- **"However", semicolons, the passive in a method section.** All are correct writing in the right place.
+
+See [references/not-tells.md](references/not-tells.md) for the rest and for what to do instead of flagging.
+
 A quick pass covers P0 and P1. Strictness per audience lives in [references/contexts.md](references/contexts.md): a LinkedIn post and an API reference do not get the same rules.
 
 ## Where the sources disagreed
@@ -101,8 +127,9 @@ Load what the job needs.
 - [references/contexts.md](references/contexts.md) covers strictness per audience, with a tolerance matrix
 - [references/russian.md](references/russian.md) covers Russian tells, false friends and punctuation
 - [references/german.md](references/german.md) covers German tells and Substantivstil
+- [references/not-tells.md](references/not-tells.md) covers what gets called a tell and is not
 - [references/examples.md](references/examples.md) covers before and after in all three languages
 
 ## Licence
 
-MIT. Merged from [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya and [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) by Conor Bronsdon, both MIT.
+MIT. Merged from [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya and [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) by Conor Bronsdon, both MIT. The unspecified-default framing, the `prose-ignore` escape hatch and the not-tells list come from [unslop-ui](https://github.com/JCarterJohnson/vibecoded-design-tells) by Carter Johnson (MIT), which applies them to visual design.

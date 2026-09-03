@@ -55,7 +55,7 @@ Rules missing from the table apply at full strength everywhere.
 
 ## Technical vocabulary exemptions
 
-These carry real meaning in technical writing and should not be flagged there: `robust`, `comprehensive`, `seamless`, `ecosystem`, `leverage` (of actual leverage or an API), `facilitate`, `streamline`, `framework`, `paradigm` (of an actual programming paradigm).
+These carry real meaning in technical writing and should not be flagged there: `robust`, `comprehensive`, `seamless`, `ecosystem`, `leverage` (of actual leverage or an API), `facilitate`, `streamline`, `framework`, `paradigm` (of an actual programming paradigm). <!-- prose-ignore -->
 
 Still flagged in technical writing: `delve`, `tapestry`, `beacon`, `embark`, `testament to`, `game-changer`, `harness`, `unlock`, `supercharge`.
 
