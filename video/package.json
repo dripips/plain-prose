@@ -1,0 +1,17 @@
+{
+  "name": "plain-prose-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ролики про plain-prose: примеры до и после, числа замера. Русский и английский.",
+  "scripts": {
+    "studio": "remotion studio",
+    "render:ru": "remotion render Ru out/plain-prose-ru.mp4",
+    "render:en": "remotion render En out/plain-prose-en.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.520",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "remotion": "^4.0.520"
+  }
+}
