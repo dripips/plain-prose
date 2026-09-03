@@ -198,3 +198,26 @@ test('social raises the em dash limit instead of dropping the rule', () => {
   assert.ok(rules(run(body, { lang: 'en', context: 'blog' })).includes('em-dash'));
   assert.ok(!rules(run(body, { lang: 'en', context: 'social' })).includes('em-dash'));
 });
+
+test('a list item defining a short lead term is typography, whatever marks it', () => {
+  const src = ['- `scripts/update.sh` — zero-downtime upgrade',
+    '- **Live edit mode** — drag-and-drop, size pips',
+    '- Bot token — one global setting',
+    '- [the guide](https://example.com) — how to run it'].join('\n');
+  assert.ok(!rules(run(src, { lang: 'en' })).includes('em-dash'));
+});
+
+test('a list item that is really prose still counts its dashes', () => {
+  const src = ['- The queue backed up for eleven minutes while the consumer waited — nobody noticed.',
+    '- The migration held the lock open the whole time — the pager fired at half past four.'].join('\n');
+  assert.ok(rules(run(src, { lang: 'en' })).includes('em-dash'));
+});
+
+test('a marked lead term is a label at any length, an unmarked one must be short', () => {
+  const long = '- **Invoices with line items and a status workflow** — draft, sent, paid, overdue';
+  assert.ok(!rules(run(long, { lang: 'en' })).includes('em-dash'));
+  const unmarked = '- Invoices with line items and a full status workflow — draft, sent, paid, overdue';
+  assert.ok(rules(run(unmarked, { lang: 'en' })).includes('em-dash'));
+  const twice = '- **Integers everywhere** — kopecks and thousandths — and verify runs nightly';
+  assert.ok(rules(run(twice, { lang: 'en' })).includes('em-dash'));
+});

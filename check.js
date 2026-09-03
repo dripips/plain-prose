@@ -187,9 +187,16 @@ function detectLang(text) {
   const cyr = (text.match(/\p{Script=Cyrillic}/gu) || []).length;
   const latin = (text.match(/[A-Za-z]/g) || []).length;
   if (cyr > latin * 0.3) return 'ru';
-  const de = (text.match(/[äöüßÄÖÜ]|\b(der|die|das|und|nicht|werden|sich)\b/g) || []).length;
-  const words = (text.match(/\S+/g) || []).length || 1;
-  return de / words > 0.06 ? 'de' : 'en';
+  // Compare German function words against English ones rather than against the
+  // whole text: a code-heavy German article dilutes any share-of-words ratio
+  // until it reads as English.
+  const de = (text.match(
+    /[äöüßÄÖÜ]|\b(der|die|das|den|dem|des|und|nicht|werden|wird|sich|eine|einen|einem|einer|mit|für|auf|ist|aus|über|zum|zur|beim|man|kann|oder)\b/gi
+  ) || []).length;
+  const en = (text.match(
+    /\b(the|and|of|to|is|in|that|with|for|this|are|from|you|it|on|as|by|but|not|can|or)\b/gi
+  ) || []).length;
+  return de >= 3 && de > en ? 'de' : 'en';
 }
 
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -289,8 +296,19 @@ function analyse(src, opts) {
     let dashes = 0, first = null;
     for (const m of masked.matchAll(/—|(?<=\s)--(?=\s)/g)) {
       const lineStart = src.lastIndexOf('\n', m.index) + 1;
-      const line = src.slice(lineStart, src.indexOf('\n', m.index) + 1 || undefined);
-      if (/^\s*[-*+]\s+(\*\*.+?\*\*|\[.+?\])\s+—/.test(line)) continue;
+      const lineEnd = src.indexOf('\n', m.index);
+      const line = src.slice(lineStart, lineEnd === -1 ? undefined : lineEnd);
+      // A list item separating a lead term from its gloss is a definition, not
+      // a splice. A term wrapped in bold, inline code or a link is marked as a
+      // label at any length; an unmarked one has to be short. Either way the
+      // item gets one dash: a second is prose again.
+      const item = line.match(/^\s*(?:[-*+]|\d+\.)\s+(.*)$/);
+      if (item) {
+        const parts = item[1].split('—');
+        const lead = parts[0].trim();
+        const labelled = /^(\*\*.+\*\*|`.+`|\[.+\](\(.*\))?)$/.test(lead);
+        if (parts.length === 2 && (labelled || wordsIn(lead) <= 6)) continue;
+      }
       dashes++;
       if (first === null) first = m.index;
     }

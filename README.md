@@ -90,7 +90,7 @@ draft.md  [en/blog, 412 words]
 
 It exits 0 when clean and 1 when it finds something, so it drops into a pre-commit hook or CI.
 
-Before it reads a word, it blanks out frontmatter, fenced and inline code, link targets, bare URLs and table rows. Those are the regions the skill promises never to rewrite, so counting tells inside them would be dishonest. Two carve-outs follow the same logic: a dash after a bolded lead term in a list item is typography, and a triad inside a longer enumeration is a specification rather than a cadence.
+Before it reads a word, it blanks out frontmatter, fenced and inline code, link targets, bare URLs and table rows. Those are the regions the skill promises never to rewrite, so counting tells inside them would be dishonest. Two carve-outs follow the same logic: a dash separating a lead term from its gloss in a list item is typography, and a triad inside a longer enumeration is a specification rather than a cadence.
 
 The five-dimension score is a proxy. It measures what a regular expression can measure: filler rate, sentence and paragraph variance, hedge count, tier 1 density. A model reading the text does the real scoring, and the same five dimensions are defined for it in `SKILL.md`.
 
@@ -114,7 +114,7 @@ references/russian.md       Russian tells, calques, false friends
 references/german.md        German tells, Substantivstil, false friends
 references/examples.md      before and after in three languages
 check.js                    the checker
-check.test.js               26 tests, node --test
+check.test.js               29 tests, node --test
 ```
 
 ## Development

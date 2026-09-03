@@ -3,7 +3,7 @@ name: plain-prose
 description: Audit and rewrite text to remove AI writing patterns. Use when drafting, editing or reviewing prose, or when asked to clean up AI-isms, remove AI tells, or make text sound less like AI. Covers English, Russian and German.
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   author: dripips (https://github.com/dripips)
   repository: https://github.com/dripips/plain-prose
   languages: en, ru, de
@@ -72,7 +72,7 @@ A quick pass covers P0 and P1. Strictness per audience lives in [references/cont
 Both parents of this skill are right inside their own register. The conflicts, and how this one resolves them:
 
 - **Adverbs.** Cut the empty ones. Keep the ones carrying truth: "the job runs nightly" and "roughly 400ms" lose meaning without them. Blanket removal breaks technical writing.
-- **Em dashes.** Target zero in prose. Carve-out: a dash separating a bolded lead term in a list item is typography, not a splice. In Russian and German the dash is ordinary punctuation, so judge the habit rather than the character. See the language references.
+- **Em dashes.** Target zero in prose. Carve-out: in a list item, a dash separating a lead term from its gloss is typography. A term marked as a label by bold, inline code or a link counts at any length; an unmarked one has to be short, and a second dash in the item is prose again. In Russian and German the dash is ordinary punctuation, so judge the habit rather than the character. See the language references.
 - **Fragments.** Banned when manufactured for drama. Fine when the register is already fragmentary, such as chat or a short social post.
 - **Wh- openers.** A run of them is a crutch. One is a sentence.
 - **Absolutes.** "Every", "always", "never" doing vague work are a tell. The same words stating a real invariant are not.

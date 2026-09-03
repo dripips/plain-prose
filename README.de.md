@@ -90,7 +90,7 @@ entwurf.md  [de/blog, 412 words]
 
 Rückgabewert 0 bei sauberem Text, 1 bei Funden. Damit passt es in einen Pre-Commit-Hook oder in CI.
 
-Vor der Auswertung werden Frontmatter, Codeblöcke, Inline-Code, Linkziele, nackte URLs und Tabellenzeilen ausgeblendet. Der Skill verspricht, genau diese Bereiche nie umzuschreiben, also wäre es unredlich, dort zu zählen. Zwei Ausnahmen folgen derselben Logik: Ein Strich nach einem fett gesetzten Listenbegriff ist Typografie, und eine Dreiergruppe innerhalb einer längeren Aufzählung ist eine Spezifikation und kein Rhythmus.
+Vor der Auswertung werden Frontmatter, Codeblöcke, Inline-Code, Linkziele, nackte URLs und Tabellenzeilen ausgeblendet. Der Skill verspricht, genau diese Bereiche nie umzuschreiben, also wäre es unredlich, dort zu zählen. Zwei Ausnahmen folgen derselben Logik: Ein Strich, der in einem Listenpunkt einen Begriff von seiner Erläuterung trennt, ist Typografie, und eine Dreiergruppe innerhalb einer längeren Aufzählung ist eine Spezifikation und kein Rhythmus.
 
 Die Bewertung über fünf Achsen ist eine Näherung. Sie misst, was ein regulärer Ausdruck messen kann: Füllwortanteil, Streuung der Satz- und Absatzlängen, Anzahl der Abschwächer, Dichte des Vokabulars der ersten Stufe. Die eigentliche Bewertung nimmt das Modell vor, das den Text liest, und dieselben fünf Achsen sind in `SKILL.md` für es beschrieben.
 
@@ -114,7 +114,7 @@ references/russian.md       russische Spuren, Lehnwörter, falsche Freunde
 references/german.md        deutsche Spuren, Substantivstil, falsche Freunde
 references/examples.md      vorher und nachher in drei Sprachen
 check.js                    das Prüfwerkzeug
-check.test.js               26 Tests, node --test
+check.test.js               29 Tests, node --test
 ```
 
 ## Entwicklung
