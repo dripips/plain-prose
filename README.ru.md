@@ -4,6 +4,12 @@
 
 [English](README.md) · [Deutsch](README.de.md)
 
+## Посмотреть
+
+[![Три настоящие правки и замер, 47 секунд](video/poster-ru.png)](https://github.com/dripips/plain-prose/releases/download/v1.1.0/plain-prose-ru.mp4)
+
+47 секунд: что такое след, три правки из настоящих коммитов и замер, из-за которого появился языковой слой. Есть и [английская версия](https://github.com/dripips/plain-prose/releases/download/v1.1.0/plain-prose-en.mp4). Исходники в [video/](video/), пересобирается через `npm run render:ru`.
+
 ## Что это
 
 Для этой задачи уже есть два хороших скилла, и они друг другу противоречат.

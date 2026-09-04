@@ -4,6 +4,12 @@ An agent skill that strips AI writing patterns out of prose, in English, Russian
 
 [Русский](README.ru.md) · [Deutsch](README.de.md)
 
+## Watch it
+
+[![Three real edits and the measurement, 47 seconds](video/poster-en.png)](https://github.com/dripips/plain-prose/releases/download/v1.1.0/plain-prose-en.mp4)
+
+47 seconds: what a tell is, three edits taken from real commits, and the measurement behind the language layer. Also in [Russian](https://github.com/dripips/plain-prose/releases/download/v1.1.0/plain-prose-ru.mp4). Sources in [video/](video/), rebuilt with `npm run render:en`.
+
 ## What it is
 
 Two good skills already exist for this job and they disagree with each other.

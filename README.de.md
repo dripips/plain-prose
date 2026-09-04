@@ -4,6 +4,12 @@ Ein Agent-Skill, der Spuren maschinellen Schreibens aus Texten entfernt. Englisc
 
 [English](README.md) · [Русский](README.ru.md)
 
+## Ansehen
+
+[![Drei echte Korrekturen und die Messung, 47 Sekunden](video/poster-en.png)](https://github.com/dripips/plain-prose/releases/download/v1.1.0/plain-prose-en.mp4)
+
+47 Sekunden: was eine Spur ist, drei Korrekturen aus echten Commits und die Messung hinter der Sprachebene. Es gibt sie auf [Englisch](https://github.com/dripips/plain-prose/releases/download/v1.1.0/plain-prose-en.mp4) und auf [Russisch](https://github.com/dripips/plain-prose/releases/download/v1.1.0/plain-prose-ru.mp4).
+
 ## Worum es geht
 
 Für diese Aufgabe gibt es bereits zwei gute Skills, und sie widersprechen einander.
