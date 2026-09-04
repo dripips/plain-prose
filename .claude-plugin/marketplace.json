@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "dripips",
+  "description": "Skills by dripips.",
+  "owner": {
+    "name": "dripips",
+    "url": "https://github.com/dripips"
+  },
+  "plugins": [
+    {
+      "name": "plain-prose",
+      "description": "Strip the patterns that make text read as machine-written. English, Russian and German, with a zero-dependency checker.",
+      "category": "productivity",
+      "source": "./",
+      "homepage": "https://github.com/dripips/plain-prose"
+    }
+  ]
+}

@@ -39,6 +39,13 @@ Die drei Sprachen sind der Teil, den keine Vorlage hatte. Deutscher Maschinentex
 
 **Claude Code.** Den Ordner in das Skill-Verzeichnis kopieren:
 
+```
+/plugin marketplace add dripips/plain-prose
+/plugin install plain-prose@dripips
+```
+
+Oder weiterhin als schlichter Ordner:
+
 ```bash
 git clone https://github.com/dripips/plain-prose.git ~/.claude/skills/plain-prose
 ```

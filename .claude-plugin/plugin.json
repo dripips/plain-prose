@@ -1,0 +1,20 @@
+{
+  "name": "plain-prose",
+  "description": "Strip the patterns that make text read as machine-written. English, Russian and German, with a zero-dependency checker.",
+  "version": "1.1.0",
+  "author": {
+    "name": "dripips",
+    "url": "https://github.com/dripips"
+  },
+  "homepage": "https://github.com/dripips/plain-prose",
+  "repository": "https://github.com/dripips/plain-prose",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "editing",
+    "prose",
+    "ai-detection",
+    "russian",
+    "german"
+  ]
+}

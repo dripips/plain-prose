@@ -37,13 +37,20 @@ The three-language part is the piece neither source had. A Russian text generate
 
 ## Install
 
-**Claude Code.** Copy the folder into your skills directory:
+**Claude Code, as a plugin.** Two commands, and updates arrive with `/plugin marketplace update dripips`:
+
+```
+/plugin marketplace add dripips/plain-prose
+/plugin install plain-prose@dripips
+```
+
+**Claude Code, as a plain folder.** Nothing wrong with this, and it keeps working:
 
 ```bash
 git clone https://github.com/dripips/plain-prose.git ~/.claude/skills/plain-prose
 ```
 
-The skill activates when you ask for an edit, a scan, or a cleanup of AI patterns. It also loads on its own when you are drafting prose.
+Either way the skill activates when you ask for an edit, a scan, or a cleanup of AI patterns. It also loads on its own when you are drafting prose.
 
 **Other agents.** `SKILL.md` follows the agentskills.io format, so Cursor, Copilot, OpenHands and anything else reading that format can use the same folder. The references are plain Markdown with relative links.
 

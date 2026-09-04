@@ -37,7 +37,14 @@
 
 ## Установка
 
-**Claude Code.** Скопировать папку в каталог скиллов:
+**Claude Code, плагином.** Две команды, обновления приходят по `/plugin marketplace update dripips`:
+
+```
+/plugin marketplace add dripips/plain-prose
+/plugin install plain-prose@dripips
+```
+
+**Claude Code, обычной папкой.** Способ никуда не делся и продолжает работать:
 
 ```bash
 git clone https://github.com/dripips/plain-prose.git ~/.claude/skills/plain-prose
