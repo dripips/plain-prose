@@ -18,7 +18,7 @@ This file is the counterweight to the catalogue: patterns that get called AI tel
 
 **A single tier-1 word.** One "delve" is a word that has been in English since the ninth century. Four of them in a page, next to "robust" and "seamless", is a signal. Judge the cluster, never the token.
 
-**Formal register and long words.** This is what academic, legal and second-language writing looks like. Detector audits report false-positive rates above 60% on non-native English writers precisely here. Flagging formality punishes the writer for not being a native speaker.
+**Formal register and long words.** This is what academic, legal and second-language writing looks like. Detector audits find more than half of non-native English samples misclassified as AI precisely here. Flagging formality punishes the writer for not being a native speaker.
 
 **"However", "moreover", "therefore".** A well-placed connective is good writing. A stack of them opening four paragraphs in a row is the tell.
 

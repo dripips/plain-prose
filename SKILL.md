@@ -17,7 +17,7 @@ Strip the patterns that make text read as machine-written. English, Russian, Ger
 
 ## Signal, not verdict
 
-These patterns run more often in machine text, and humans produce every one of them: under deadline, in an unfamiliar genre, in a second language. Audits of commercial AI detectors report false-positive rates above 60% on non-native English writers (Liang et al., Stanford, *Patterns* 2023) and misclassification above 70% for open-source detectors (Jabarian & Imas, BFI WP 2025-116).
+These patterns run more often in machine text, and humans produce every one of them: under deadline, in an unfamiliar genre, in a second language. Liang et al. (*Patterns* 2023) found GPT detectors misclassifying more than half of non-native English writing samples as AI-generated, while native samples came back nearly right. Jabarian and Imas (BFI WP 2025-116) measured open-source detectors flagging up to 78% of human text, though the commercial detectors in the same study did far better, one of them at near-zero error.
 
 Use the flags to improve writing. Never use them alone to decide something consequential about a person: a grade, a hire, an accusation.
 
