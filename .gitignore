@@ -1,2 +1,5 @@
 node_modules/
 *.log
+
+# Черновики постов живут в c:/rubby/posts, к продукту не относятся
+post/
